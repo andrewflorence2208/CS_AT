@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SCAPE ROOM</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.gifcen.com/wp-content/uploads/2021/09/kirby-gif-2.gif">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+        <div class="menu">
+            
+            <button type="button" class="type1" onclick="start_game(); next_question()">PLAY</button>    
+        </div>
+
+    <div class="game-screen">
+
+        <div class="puzzle puzzle1 menu">
+            <div class="quest quest1"></div>
+            <div class="answers answers1">
+                <button type="button" class="type1 type2 alternative11"></button>
+                <button type="button" class="type1 type2 alternative12"></button>
+                <button type="button" class="type1 type2 alternative13"></button>
+                <button type="button" class="type1 type2 alternative14"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menu2">
+        <div class="game_timer">TIMER:</div>
+        <div class="keys"></div>
+        <button type="button" class="quit-bt" onclick="quit()">QUIT</button>
+    </div>
+    
+    <div class="menu bigL-msg">
+        <div>QUASE</div>
+        <button></button>
+        <button type="button" class="quit-bt" onclick="quit()">QUIT</button>
+    </div>
+
+    <div class="menu win-msg">
+        <div>
+                PARABENS
+            <span class="small">
+                por: ANDRÉ FLORÊNCIO, DAVI SARAIVA, ALVARO STEGER, JOAO GUILHERM;
+            </span>
+        </div>
+        <button></button>
+        <button type="button" class="quit-bt" onclick="quit()">QUIT</button>
+    </div>
+</body>
+</html>

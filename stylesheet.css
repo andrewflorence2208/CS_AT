@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@600;700&display=swap');
+
+body {
+    font-family: 'Silkscreen', 'Roboto';
+    font-weight: 700;
+    text-shadow: 1px 1px white;
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.5), transparent, rgba(0, 0, 50, 0.5)), url("BRICK_1A.png");
+    background-size: 10%;
+}
+
+.menu 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2vh 5vw ;
+}
+
+:root {
+	--menu-bg: black;
+	/* ↑ Inner background color */
+	
+	--menu-border: white;
+	/* ↑ Inner border color */
+	
+	--menu-border-2: black;
+	/* ↑ Middle border color */
+	
+	--menu-border-3: var(--menu-border);
+	/* ↑ Outer border color */
+	
+	--menu-size: 3px;
+	/* ↑ Pixel size */
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh;
+
+	background: var(--menu-bg);
+	box-shadow:
+		
+	/* Inner Background Color */
+		0 calc(var(--menu-size ) * -3) 0 calc(var(--menu-size   ) * -1) var(--menu-bg),
+		0 calc(var(--menu-size ) * 3) 0 calc(var(--menu-size) * -1) var(--menu-bg),
+		0 calc(var(--menu-size ) * -6) 0 calc(var(--menu-size   ) * -2) var(--menu-bg),
+		0 calc(var(--menu-size ) * 6) 0 calc(var(--menu-size) * -2) var(--menu-bg),
+		0 calc(var(--menu-size ) * -9) 0 calc(var(--menu-size   ) * -4) var(--menu-bg),
+		0 calc(var(--menu-size ) * 9) 0 calc(var(--menu-size) * -4) var(--menu-bg),
+		0 calc(var(--menu-size ) * -12) 0 calc(var(--menu-size  ) * -6) var(--menu-bg),
+		0 calc(var(--menu-size ) * 12) 0 calc(var(--menu-size   ) * -6) var(--menu-bg),
+		
+	/* Pixel Border Layer 1 */
+		calc(var(--menu-size   ) * -1) 0 0 0 var(--menu-border),
+		var(--menu-size) 0 0 0 var(--menu-border),
+		0 calc(var(--menu-size ) * -2) 0 0 var(--menu-border),
+		0 calc(var(--menu-size ) * 2) 0 0 var(--menu-border),
+		0 calc(var(--menu-size ) * -5) 0 calc(var(--menu-size   ) * -1) var(--menu-border),
+		0 calc(var(--menu-size ) * 5) 0 calc(var(--menu-size) * -1) var(--menu-border),
+		0 calc(var(--menu-size ) * -7) 0 calc(var(--menu-size   ) * -2) var(--menu-border),
+		0 calc(var(--menu-size ) * 7) 0 calc(var(--menu-size) * -2) var(--menu-border),
+		0 calc(var(--menu-size ) * -10) 0 calc(var(--menu-size  ) * -4) var(--menu-border),
+		0 calc(var(--menu-size ) * 10) 0 calc(var(--menu-size   ) * -4) var(--menu-border),
+		0 calc(var(--menu-size ) * -13) 0 calc(var(--menu-size  ) * -6) var(--menu-border),
+		0 calc(var(--menu-size ) * 13) 0 calc(var(--menu-size   ) * -6) var(--menu-border),
+		
+	/* Pixel Border Layer 2 */
+		calc(var(--menu-size   ) * -2) 0 0 0 var(--menu-border-2),
+		calc(var(--menu-size   ) * 2) 0 0 0 var(--menu-border-2),
+		0 calc(var(--menu-size ) * -1) 0 var(--menu-size) var(--menu-border-2), 
+		0 var(--menu-size  ) 0 var(--menu-size   ) var(--menu-border-2),
+		0 calc(var(--menu-size ) * -4) 0 0 var(--menu-border-2),
+		0 calc(var(--menu-size ) * 4) 0 0 var(--menu-border-2),
+		0 calc(var(--menu-size ) * -6) 0 calc(var(--menu-size   ) * -1) var(--menu-border-2),
+		0 calc(var(--menu-size ) * 6) 0 calc(var(--menu-size) * -1) var(--menu-border-2),
+		0 calc(var(--menu-size ) * -8) 0 calc(var(--menu-size   ) * -2) var(--menu-border-2),
+		0 calc(var(--menu-size ) * 8) 0 calc(var(--menu-size) * -2) var(--menu-border-2),
+		0 calc(var(--menu-size ) * -11) 0 calc(var(--menu-size  ) * -4) var(--menu-border-2),
+		0 calc(var(--menu-size ) * 11) 0 calc(var(--menu-size   ) * -4) var(--menu-border-2),
+		0 calc(var(--menu-size ) * -14) 0 calc(var(--menu-size  ) * -6) var(--menu-border-2),
+		0 calc(var(--menu-size ) * 14) 0 calc(var(--menu-size   ) * -6) var(--menu-border-2),
+		
+	/* Border Layer 3: --menu-border-3 */
+		calc(var(--menu-size   ) * -3) 0 0 0 var(--menu-border-3),
+		calc(var(--menu-size   ) * 3) 0 0 0 var(--menu-border-3),
+		0 0 0 calc(var(--menu-size ) * 2) var(--menu-border-3),
+		0 calc(var(--menu-size ) * -3) 0 var(--menu-size) var(--menu-border-3),
+		0 calc(var(--menu-size ) * 3) 0 var(--menu-size ) var(--menu-border-3),
+		0 calc(var(--menu-size ) * -5) 0 0 var(--menu-border-3),
+		0 calc(var(--menu-size ) * 5) 0 0 var(--menu-border-3),
+		0 calc(var(--menu-size ) * -7) 0 calc(var(--menu-size   ) * -1) var(--menu-border-3),
+		0 calc(var(--menu-size ) * 7) 0 calc(var(--menu-size) * -1) var(--menu-border-3),
+		0 calc(var(--menu-size ) * -9) 0 calc(var(--menu-size   ) * -2) var(--menu-border-3), 
+		0 calc(var(--menu-size ) * 9) 0 calc(var(--menu-size) * -2) var(--menu-border-3),
+		0 calc(var(--menu-size ) * -12) 0 calc(var(--menu-size  ) * -4) var(--menu-border-3), 
+		0 calc(var(--menu-size ) * 12) 0 calc(var(--menu-size   ) * -4) var(--menu-border-3),
+		0 calc(var(--menu-size ) * -15) 0 calc(var(--menu-size  ) * -6) var(--menu-border-3), 
+		0 calc(var(--menu-size ) * 15) 0 calc(var(--menu-size   ) * -6) var(--menu-border-3);
+}
+
+:root {
+	--type1-bg:rgba(103,98,92,255);
+	/* ↑ Inner background color */
+	
+	--type1-border: black;
+	/* ↑ Inner border color */
+	
+	--type1-border-2: white;
+	/* ↑ Middle border color */
+	
+	--type1-border-3: var(--type1-border);
+	/* ↑ Outer border color */
+	
+	--type1-size: 3px;
+	/* ↑ Pixel size */
+}
+
+.type1 {
+
+    border: none;   
+
+    font-weight: 600;
+    font-size: 2dvw;
+
+    height: 3dvh;
+    width: 17dvw;
+
+	background: var(--type1-bg);
+	box-shadow:
+		
+	/* Inner Background Color */
+		0 calc(var(--type1-size) * -3) 0 calc(var(--type1-size) * -1) var(--type1-bg),
+		0 calc(var(--type1-size) * 3) 0 calc(var(--type1-size) * -1) var(--type1-bg),
+		0 calc(var(--type1-size) * -6) 0 calc(var(--type1-size) * -2) var(--type1-bg),
+		0 calc(var(--type1-size) * 6) 0 calc(var(--type1-size) * -2) var(--type1-bg),
+		0 calc(var(--type1-size) * -9) 0 calc(var(--type1-size) * -4) var(--type1-bg),
+		0 calc(var(--type1-size) * 9) 0 calc(var(--type1-size) * -4) var(--type1-bg),
+		0 calc(var(--type1-size) * -12) 0 calc(var(--type1-size) * -6) var(--type1-bg),
+		0 calc(var(--type1-size) * 12) 0 calc(var(--type1-size) * -6) var(--type1-bg),
+		
+	/* Pixel Border Layer 1 */
+		calc(var(--type1-size) * -1) 0 0 0 var(--type1-border),
+		var(--type1-size) 0 0 0 var(--type1-border),
+		0 calc(var(--type1-size) * -2) 0 0 var(--type1-border),
+		0 calc(var(--type1-size) * 2) 0 0 var(--type1-border),
+		0 calc(var(--type1-size) * -5) 0 calc(var(--type1-size) * -1) var(--type1-border),
+		0 calc(var(--type1-size) * 5) 0 calc(var(--type1-size) * -1) var(--type1-border),
+		0 calc(var(--type1-size) * -7) 0 calc(var(--type1-size) * -2) var(--type1-border),
+		0 calc(var(--type1-size) * 7) 0 calc(var(--type1-size) * -2) var(--type1-border),
+		0 calc(var(--type1-size) * -10) 0 calc(var(--type1-size) * -4) var(--type1-border),
+		0 calc(var(--type1-size) * 10) 0 calc(var(--type1-size) * -4) var(--type1-border),
+		0 calc(var(--type1-size) * -13) 0 calc(var(--type1-size) * -6) var(--type1-border),
+		0 calc(var(--type1-size) * 13) 0 calc(var(--type1-size) * -6) var(--type1-border),
+		
+	/* Pixel Border Layer 2 */
+		calc(var(--type1-size) * -2) 0 0 0 var(--type1-border-2),
+		calc(var(--type1-size) * 2) 0 0 0 var(--type1-border-2),
+		0 calc(var(--type1-size) * -1) 0 var(--type1-size) var(--type1-border-2), 
+		0 var(--type1-size) 0 var(--type1-size) var(--type1-border-2),
+		0 calc(var(--type1-size) * -4) 0 0 var(--type1-border-2),
+		0 calc(var(--type1-size) * 4) 0 0 var(--type1-border-2),
+		0 calc(var(--type1-size) * -6) 0 calc(var(--type1-size) * -1) var(--type1-border-2),
+		0 calc(var(--type1-size) * 6) 0 calc(var(--type1-size) * -1) var(--type1-border-2),
+		0 calc(var(--type1-size) * -8) 0 calc(var(--type1-size) * -2) var(--type1-border-2),
+		0 calc(var(--type1-size) * 8) 0 calc(var(--type1-size) * -2) var(--type1-border-2),
+		0 calc(var(--type1-size) * -11) 0 calc(var(--type1-size) * -4) var(--type1-border-2),
+		0 calc(var(--type1-size) * 11) 0 calc(var(--type1-size) * -4) var(--type1-border-2),
+		0 calc(var(--type1-size) * -14) 0 calc(var(--type1-size) * -6) var(--type1-border-2),
+		0 calc(var(--type1-size) * 14) 0 calc(var(--type1-size) * -6) var(--type1-border-2),
+		
+	/* Border Layer 3: --type1-border-3 */
+		calc(var(--type1-size) * -3) 0 0 0 var(--type1-border-3),
+		calc(var(--type1-size) * 3) 0 0 0 var(--type1-border-3),
+		0 0 0 calc(var(--type1-size) * 2) var(--type1-border-3),
+		0 calc(var(--type1-size) * -3) 0 var(--type1-size) var(--type1-border-3),
+		0 calc(var(--type1-size) * 3) 0 var(--type1-size) var(--type1-border-3),
+		0 calc(var(--type1-size) * -5) 0 0 var(--type1-border-3),
+		0 calc(var(--type1-size) * 5) 0 0 var(--type1-border-3),
+		0 calc(var(--type1-size) * -7) 0 calc(var(--type1-size) * -1) var(--type1-border-3),
+		0 calc(var(--type1-size) * 7) 0 calc(var(--type1-size) * -1) var(--type1-border-3),
+		0 calc(var(--type1-size) * -9) 0 calc(var(--type1-size) * -2) var(--type1-border-3), 
+		0 calc(var(--type1-size) * 9) 0 calc(var(--type1-size) * -2) var(--type1-border-3),
+		0 calc(var(--type1-size) * -12) 0 calc(var(--type1-size) * -4) var(--type1-border-3), 
+		0 calc(var(--type1-size) * 12) 0 calc(var(--type1-size) * -4) var(--type1-border-3),
+		0 calc(var(--type1-size) * -15) 0 calc(var(--type1-size) * -6) var(--type1-border-3), 
+		0 calc(var(--type1-size) * 15) 0 calc(var(--type1-size) * -6) var(--type1-border-3);
+}
+
+.type1:hover
+{
+    cursor: pointer;
+    animation-name: boing;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boing 
+{
+    0%
+    {
+        font-size: 2dvw;
+    }
+    50%
+    {
+        font-size: 2.1dvw;
+    }
+    100%
+    {
+        font-size: 2dvw;
+    }
+}
+
+
+.game-screen 
+{
+    display: none;
+}
+
+.menu2 
+{
+    display: none;
+    grid-template-columns: 30dvw;
+    position: absolute;
+    top: 3dvh;
+    right: 2dvw;
+
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.395);
+    box-shadow:  4dvh 4dvh 4dvh 4dvh rgba(0, 0, 0, 0.395);
+}
+
+.puzzle
+{
+    grid-template-rows: 20vh;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2vh 5vw ;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.answers
+{
+    display: grid;
+    grid-template-columns: 32dvw 32dvw;
+    grid-template-rows: 15vh;
+    justify-items: center;
+}
+
+.type1.type2 {
+    width:30vw;
+}
+
+.key 
+{
+    height: 4dvw;
+}
+
+.bigL-msg {
+    display: none;
+}
+
+.win-msg
+{
+    display: none;
+    size: 50%;
+}
+
+.small{
+    text-shadow: none;
+    font-family: Arial;
+    color: white;
+    font-size: 2dvh;
+}
