@@ -86,7 +86,7 @@ const questions_root = [
         action: "Segundo o Marco Civil, o que acontece se um provedor de aplicações não remover conteúdos que violem a privacidade de alguém após receber notificação?",
         opt1: {
             text: " É processado civilmente",
-            nextpoint: false,
+            nextpoint: true,
         },
         opt2: {
             text: " É multado automaticamente",
